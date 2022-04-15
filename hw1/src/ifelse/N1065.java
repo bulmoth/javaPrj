@@ -24,6 +24,6 @@ public class N1065 {
 			System.out.println(c);
 		}
 		
-	}
+	}//main
 
-}
+}//class
