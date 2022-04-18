@@ -7,7 +7,7 @@ public class Main {		//1430
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		
+		/*
 		int N = sc.nextInt();
 		int[] nArr = new int[N];
 		
@@ -33,29 +33,25 @@ public class Main {		//1430
 			}
 			System.out.print(result[j] + " ");
 		}
-		
-		
-
-		/*
-		int j = 0;
-		int i = 0;
-		while(i<N){
-		    if(mArr[j] == nArr[i]){
-		        result[j] = 1;
-		        i = 0;
-		        j++;
-		        if(j == M) break;
-		    }else{
-		        i++;
-		        if(i == N) i=0;
-		    }
-		}
-        for(int k=0; k<M; k++){
-            System.out.print(result[k] + " ");
-        }
 		*/
 		
+		int N = sc.nextInt();
+		int[] nArr = new int[N];
+		int[] saying = new int[10000001];
+		for(int i=0; i<N; i++) {
+			nArr[i] = sc.nextInt();
+			saying[nArr[i]] = 1;
+		}
 		
+		int M = sc.nextInt();
+		for(int i=0; i<M; i++) {
+			int prob = sc.nextInt();
+			if(saying[prob] == 1) {
+				System.out.print(1 + " ");
+			}else {
+				System.out.print(0 + " ");
+			}
+		}
 		
 	}//main
 	
