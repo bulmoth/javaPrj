@@ -24,7 +24,7 @@ public class Main {		//1430
 		
 		int[] result = new int[M];
 		
-		for(int j=0; j<M; j++) {		//시간초과되는 이중for문ㅠㅠ
+		for(int j=0; j<M; j++) {		//시간초과되는 이중for문ㅠㅠ	//한글확인
 			for(int i=0; i<N; i++) {
 				if(mArr[j] == nArr[i]) {
 					result[j] = 1;
