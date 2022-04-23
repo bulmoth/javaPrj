@@ -2,7 +2,10 @@ package com.kh.obj;
 
 import com.kh.main.Run;
 
-public class Nose {
+public class Nose extends Character{
+	
+	//Object
+	Character c = new Character();
 	
 	//data
 	private String shape;		//동그란 코, 세모난 코
@@ -32,7 +35,7 @@ public class Nose {
 	
 	//method
 	
-	public String window() {
+	public String window() {		//코모양
 		System.out.println("\n아까부터 창문을 열심히 보는 것 같던데...");
 		System.out.println("-내가?\t-내가 좀?");
 		
@@ -49,7 +52,7 @@ public class Nose {
 		return this.shape;
 	}//window
 	
-	public String meat() {
+	public String meat() {		//지성 건성
 		System.out.println("\n어제 맛있는 고기를 먹었는데 말이야...");
 		System.out.println("너도 고기 좋아해?");
 		System.out.println("-응\t-아니");
@@ -70,5 +73,29 @@ public class Nose {
 			return "건성의 ";
 		}
 	}//meat
+	
+	public String nose(String len) {		//코 크기
+		switch(len) {
+		case "+" :
+			return "큰 ";
+		case "-" :
+			return "작은 ";
+		default :
+			return "중간 크기의 ";	
+		}
+	}//hairL
+	
+	public String nose(char color) {		//코 색
+		switch(color) {
+		case 'R' :
+			return "붉은 코 ";
+		case 'Y' :
+			return "노란 코 ";
+		case 'K' :
+			return "검은 코 ";
+		default :
+			return "매부리 코 ";
+		}
+	}//hairC
 
 }//class

@@ -2,7 +2,10 @@ package com.kh.obj;
 
 import com.kh.main.Run;
 
-public class Hair {
+public class Hair extends Character{
+	
+	//Object
+	Character c = new Character();
 	
 	//data
 	private boolean isCurl;		//곱슬, 직모
@@ -31,7 +34,7 @@ public class Hair {
 	}
 	
 	//method
-	public String rain() {
+	public String rain() {		//곱슬기
 		System.out.println("\n 비가 많이 내리네...");
 		System.out.println("비 내리는 날 좋아해?");
 		System.out.println("-응\t-아니");
@@ -53,11 +56,12 @@ public class Hair {
 		}
 	}//rain
 	
-	public String hurry() {
+	public String hurry() {		//개털
 		System.out.println("\n땀을 많이 흘리네. 뛰어왔나봐?");
 		System.out.println("-응\t-아니");
 		
 		answer = Run.sc.nextLine();
+		
 		if(answer.equals("응")) {
 			this.isBususu = true;
 			System.out.println("어쩐지...에어컨 좀 틀어줄게.");
@@ -72,5 +76,30 @@ public class Hair {
 			return "차분한 ";
 		}
 	}//hurry
+	
+	public String hair(String len) {		//머리길이
+		switch(len) {
+		case "+" :
+			return "긴 ";
+		case "-" :
+			return "짧은 ";
+		default :
+			return "이도저도 아닌 ";	
+		}
+	}//hairL
+	
+	public String hair(char color) {		//머리색
+		switch(color) {
+		case 'R' :
+			return "붉은색 머리칼의 ";
+		case 'Y' :
+			return "노란 머리칼의 ";
+		case 'K' :
+			return "검은 머리칼의 ";
+		default :
+			return "흰 머리칼의 ";
+		}
+	}//hairC
+	
 
 }//class

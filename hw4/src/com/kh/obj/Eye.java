@@ -3,9 +3,10 @@ package com.kh.obj;
 import java.util.Date;
 import com.kh.main.Run;
 
-public class Eye {
+public class Eye extends Character{
 	
-	
+	//Object
+	Character c = new Character();
 	
 	//data
 	private boolean isBright;		//ÃÑ±â ÀÖ, ¾ø
@@ -36,7 +37,7 @@ public class Eye {
 	
 	//method
 	
-	public String starting() {
+	public String starting() {		//½ÃÀÛ - ÃÑ±â
 		Date today = new Date();
 		System.out.println("\nÀú ¼Õ´Ô...");
 		System.out.println("¿À´ÃÀÌ " + today + " ¸Â³ª?");
@@ -59,7 +60,7 @@ public class Eye {
 		}
 	}//starting
 	
-	public String typhoon() {
+	public String typhoon() {		//´«½ç ±æÀÌ
 		System.out.println("\n ÅÂÇ³ÀÌ ¿Â´Ù´øµ¥...");
 		System.out.println("ºñ°¡ ¸î¹Ì¸®³ª ¿Ã±î?");
 		
@@ -67,7 +68,31 @@ public class Eye {
 		
 		this.eyelash = Integer.parseInt(answer);
 		return Integer.toString(eyelash) + "mmÀÇ ¼Ó´«½çÀ» °¡Áø ";
-	}
+	}//typhoon
+	
+	public String eye(String len) {		//´« Å©±â
+		switch(len) {
+		case "+" :
+			return "Å« ";
+		case "-" :
+			return "ÀÛÀº ";
+		default :
+			return "ÀÌµµÀúµµ ¾Æ´Ñ ";	
+		}
+	}//hairL
+	
+	public String eye(char color) {		//´«»ö
+		switch(color) {
+		case 'R' :
+			return "ºÓÀº»ö ´«ÀÇ ";
+		case 'Y' :
+			return "³ë¶õ ´«ÀÇ ";
+		case 'K' :
+			return "°ËÀº ´«ÀÇ ";
+		default :
+			return "Çª¸¥ ´«ÀÇ ";
+		}
+	}//hairC
 	
 	
 }//class
