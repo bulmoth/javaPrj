@@ -90,13 +90,13 @@ public class Nose extends Character{
 	public String color() {		//코 색
 		switch(super.color()) {
 		case "R" :
-			return "붉은 코 ";
+			return "붉은 코의 ";
 		case "Y" :
-			return "노란 코 ";
+			return "노란 코의 ";
 		case "K" :
-			return "검은 코 ";
+			return "검은 코의 ";
 		default :
-			return "매부리 코 ";
+			return "매부리 코의 ";
 		}
 	}//color
 

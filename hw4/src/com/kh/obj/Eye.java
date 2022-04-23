@@ -61,7 +61,7 @@ public class Eye extends Character{
 	}//starting
 	
 	public String typhoon() {		//눈썹 길이
-		System.out.println("\n 태풍이 온다던데...");
+		System.out.println("\n태풍이 온다던데...");
 		System.out.println("비가 몇미리나 올까?");
 		
 		answer = Run.sc.nextLine();

@@ -35,7 +35,7 @@ public class Hair extends Character{
 	
 	//method
 	public String rain() {		//곱슬기
-		System.out.println("\n 비가 많이 내리네...");
+		System.out.println("\n비가 많이 내리네...");
 		System.out.println("비 내리는 날 좋아해?");
 		System.out.println("-응\t-아니");
 		
