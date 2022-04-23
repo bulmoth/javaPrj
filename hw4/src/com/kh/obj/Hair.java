@@ -77,24 +77,26 @@ public class Hair extends Character{
 		}
 	}//hurry
 	
-	public String hair(String len) {		//머리길이
-		switch(len) {
+	@Override
+	public String len() {		//머리길이
+		switch(super.len()) {
 		case "+" :
-			return "긴 ";
+			return "긴 머리의 ";
 		case "-" :
-			return "짧은 ";
+			return "짧은 머리의 ";
 		default :
-			return "이도저도 아닌 ";	
+			return "이도저도 아닌 머리의 ";	
 		}
 	}//hairL
 	
-	public String hair(char color) {		//머리색
-		switch(color) {
-		case 'R' :
+	@Override
+	public String color() {		//머리색
+		switch(super.color()) {
+		case "R" :
 			return "붉은색 머리칼의 ";
-		case 'Y' :
+		case "Y" :
 			return "노란 머리칼의 ";
-		case 'K' :
+		case "K" :
 			return "검은 머리칼의 ";
 		default :
 			return "흰 머리칼의 ";

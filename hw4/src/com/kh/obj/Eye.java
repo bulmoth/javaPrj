@@ -70,29 +70,31 @@ public class Eye extends Character{
 		return Integer.toString(eyelash) + "mmÀÇ ¼Ó´«½çÀ» °¡Áø ";
 	}//typhoon
 	
-	public String eye(String len) {		//´« Å©±â
-		switch(len) {
+	@Override
+	public String len() {		//´« Å©±â
+		switch(super.len()) {
 		case "+" :
-			return "Å« ";
+			return "Å« ´«ÀÇ ";
 		case "-" :
-			return "ÀÛÀº ";
+			return "ÀÛÀº ´«ÀÇ ";
 		default :
-			return "ÀÌµµÀúµµ ¾Æ´Ñ ";	
+			return "ÀÌµµÀúµµ ¾Æ´Ñ ´«ÀÇ ";	
 		}
-	}//hairL
+	}//len
 	
-	public String eye(char color) {		//´«»ö
-		switch(color) {
-		case 'R' :
+	@Override
+	public String color() {		//´«»ö
+		switch(super.color()) {
+		case "R" :
 			return "ºÓÀº»ö ´«ÀÇ ";
-		case 'Y' :
+		case "Y" :
 			return "³ë¶õ ´«ÀÇ ";
-		case 'K' :
+		case "K" :
 			return "°ËÀº ´«ÀÇ ";
 		default :
 			return "Çª¸¥ ´«ÀÇ ";
 		}
-	}//hairC
+	}//color
 	
 	
 }//class

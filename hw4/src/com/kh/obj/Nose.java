@@ -74,28 +74,30 @@ public class Nose extends Character{
 		}
 	}//meat
 	
-	public String nose(String len) {		//코 크기
-		switch(len) {
+	@Override
+	public String len() {		//코 크기
+		switch(super.len()) {
 		case "+" :
-			return "큰 ";
+			return "큰 코의 ";
 		case "-" :
-			return "작은 ";
+			return "작은 코의 ";
 		default :
-			return "중간 크기의 ";	
+			return "중간 크기의 코의 ";	
 		}
-	}//hairL
+	}//len
 	
-	public String nose(char color) {		//코 색
-		switch(color) {
-		case 'R' :
+	@Override
+	public String color() {		//코 색
+		switch(super.color()) {
+		case "R" :
 			return "붉은 코 ";
-		case 'Y' :
+		case "Y" :
 			return "노란 코 ";
-		case 'K' :
+		case "K" :
 			return "검은 코 ";
 		default :
 			return "매부리 코 ";
 		}
-	}//hairC
+	}//color
 
 }//class

@@ -32,15 +32,16 @@ public class Run {
 		
 		//random Question
 		int select = r.nextInt(2);
-		char sky = ch[r.nextInt(3)].sky();
-		String sleep = ch[r.nextInt(3)].sleep();
 		
 		switch(select) {
 		case 0:
-			
+			result += ch[r.nextInt(3)].color();break;
+		case 1:
+			result += ch[r.nextInt(3)].len(); break;
+		default :
+			System.out.println("공기 중에 어색함이 흐른다...");
 		}
 		
-		((Hair) ch[1]).hair()
 		
 		System.out.println("\n자, 마을에 도착했어. 너의 새로운 출발을 응원할게.");
 		System.out.println("\n\n당신은 " + result + "모습을 가진 사람이 되었습니다.");
