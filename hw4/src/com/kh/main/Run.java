@@ -25,8 +25,8 @@ public class Run {
 		//default Question
 		result += ((Eye) ch[0]).starting();	//醚扁
 		result += ((Hair) ch[1]).rain();		//蚌浇扁
-		result += ((Eye) ch[0]).typhoon();	//加传界辨捞
 		result += ((Nose) ch[2]).window();	//内葛剧
+		result += ((Eye) ch[0]).typhoon();	//加传界辨捞
 		result += ((Hair) ch[1]).hurry();	//俺判
 		result += ((Nose) ch[2]).meat();		//瘤己 扒己
 		

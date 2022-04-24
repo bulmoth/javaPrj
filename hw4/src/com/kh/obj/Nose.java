@@ -42,10 +42,10 @@ public class Nose extends Character{
 		answer = Run.sc.nextLine();
 		
 		if(answer.equals("내가?")) {
-			this.shape = "동그란 코의 ";
+			this.shape = "동그란 코의, ";
 			System.out.println("아니야? 내 착각인가...");
 		}else {
-			this.shape = "세모난 코의 ";
+			this.shape = "세모난 코의, ";
 			System.out.println("눈 빠지겠더라.");
 		}
 		
@@ -68,9 +68,9 @@ public class Nose extends Character{
 		}
 		
 		if(isOily) {
-			return "지성의 ";
+			return "지성의, ";
 		}else {
-			return "건성의 ";
+			return "건성의, ";
 		}
 	}//meat
 	

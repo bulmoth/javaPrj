@@ -54,9 +54,9 @@ public class Eye extends Character{
 		}
 		
 		if(isBright) {
-			return "ÃÑ±â°¡ ÀÖ´Â ";
+			return "ÃÑ±â°¡ ÀÖ´Â, ";
 		}else {
-			return "ÃÑ±â°¡ ¾ø´Â ";
+			return "ÃÑ±â°¡ ¾ø´Â, ";
 		}
 	}//starting
 	
@@ -67,7 +67,7 @@ public class Eye extends Character{
 		answer = Run.sc.nextLine();
 		
 		this.eyelash = Integer.parseInt(answer);
-		return Integer.toString(eyelash) + "mmÀÇ ¼Ó´«½çÀ» °¡Áø ";
+		return Integer.toString(eyelash) + "mmÀÇ ¼Ó´«½çÀ» °¡Áø, ";
 	}//typhoon
 	
 	@Override

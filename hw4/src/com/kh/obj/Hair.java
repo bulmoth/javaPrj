@@ -50,9 +50,9 @@ public class Hair extends Character{
 		}
 		
 		if(isCurl) {
-			return "곱슬인 ";
+			return "곱슬인, ";
 		}else {
-			return "직모인 ";
+			return "직모인, ";
 		}
 	}//rain
 	
@@ -71,9 +71,9 @@ public class Hair extends Character{
 		}
 		
 		if(isBususu) {
-			return "어수선한 ";
+			return "어수선한, ";
 		}else {
-			return "차분한 ";
+			return "차분한, ";
 		}
 	}//hurry
 	
